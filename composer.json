@@ -1,0 +1,37 @@
+{
+	"name": "vinny/usersnotes",
+	"type": "phpbb-extension",
+	"description": "This extension allow users to write their own notes.",
+	"homepage": "https://github.com/vinny",
+	"version": "1.0.0",
+	"time": "2015-06-11",
+	"keywords": ["phpbb", "extension", "user", "notes", "usersnotes"],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "_Vinny_",
+			"homepage": "http://www.suportephpbb.com.br",
+			"email": "vinny@suportephpbb.com.br",
+			"role": "Extension Developer"
+		},
+		{
+			"name": "Jakub Senko (Senky)",
+			"email": "jakubsenko@gmail.com",
+			"role": "MOD Author/Past Contributor"
+		}
+	],
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"extra": {
+		"display-name": "User's notes",
+		"soft-require": {
+			"phpbb/phpbb": "3.1.*"
+		},
+		"version-check": {
+			"host": "www.phpbb.com",
+			"directory": "/customise/db/extension/",
+			"filename": "version_check"
+		}
+	}
+}

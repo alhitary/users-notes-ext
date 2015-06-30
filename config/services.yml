@@ -1,0 +1,16 @@
+services:
+    vinny.usersnotes.controller:
+        class: vinny\usersnotes\controller\main
+        arguments:
+            - @dbal.conn
+            - @template
+            - @user
+            - @controller.helper
+            - @request
+    vinny.usersnotes.listener:
+        class: vinny\usersnotes\event\listener
+        arguments:
+            - @template
+            - @controller.helper
+        tags:
+            - { name: event.listener }

@@ -1,0 +1,3 @@
+vinny_usersnotes_controller:
+    path: /notes
+    defaults: { _controller: vinny.usersnotes.controller:base }
